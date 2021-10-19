@@ -1,0 +1,5 @@
+#ignore node modules 
+node_modules
+
+# ignore gulp-sass cache
+.gulp-scss-cache

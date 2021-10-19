@@ -1,0 +1,26 @@
+.contact {
+  background: url(../images/contact.png) no-repeat;
+  background-size: cover;
+  background-position: center left;
+  .list {
+    margin-top: 30px;
+    &__item {
+      margin-bottom: 20px;
+      i {
+        font-size: 20px;
+        margin-right: 10px;
+      }
+    }
+    &__text {
+      font-size: 19px;
+    }
+  }
+  .section__content {
+    padding: 80px 20px;
+  }
+  #map {
+    @media #{$max-medium} {
+      height: 400px !important;
+    }
+  }
+}

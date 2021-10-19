@@ -1,0 +1,112 @@
+.hero {
+  position: relative;
+  height: calc(100vh - 98px);
+  .owl-item,
+  .owl-stage,
+  .owl-stage-outer,
+  .item {
+    height: 100%;
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  &__content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+  }
+  &__text {
+    max-width: 543px;
+  }
+  &__head {
+    font-size: 54px;
+    color: $primary;
+    margin-bottom: 40px;
+  }
+  &__desc {
+    font-size: 18px;
+    line-height: 39px;
+    margin-bottom: 40px;
+    color: $white;
+  }
+  .btn-primary {
+    background: $white;
+    color: $primary;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 0 20px 0 20px;
+    border: 2px dotted $primary;
+  }
+  .owl-dots {
+    margin-top: -50px;
+    z-index: 22;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 22;
+    .owl-dot {
+      height: 5px;
+      width: 25px;
+      border-radius: 6px;
+      background: $white !important;
+    }
+  }
+}
+
+.welcome {
+  padding: 100px 0;
+  .welcome-text {
+    margin-top: 30px;
+    &__welcome {
+      color: $primary;
+      font-size: 45px;
+      font-weight: bold;
+      margin-bottom: 24px;
+    }
+    &__title {
+      color: #3d3d3d;
+      font-size: 34px;
+      font-weight: bold;
+      margin-bottom: 24px;
+    }
+    &__desc {
+      color: #6e6e6e;
+      font-size: 19px;
+      font-weight: 500;
+    }
+    &__button {
+      .btn-primary {
+        background: $primary;
+        color: $white;
+        border-radius: 22px;
+        font-size: 22px;
+        padding: 16px 97px;
+        margin-top: 47px;
+        @include shadow(0, 10px, 35px, 0, rgba(0, 0, 0, 0.1));
+        @media #{$max-medium} {
+          padding: 10px 20px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .connect {
+    margin-bottom: 24px;
+    &__title {
+      font-size: 19px;
+      color: #6e6e6e;
+      font-weight: bold;
+    }
+    &__desc {
+      margin-top: 10px;
+      font-size: 19px;
+      color: #6e6e6e;
+    }
+  }
+}

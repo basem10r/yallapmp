@@ -1,0 +1,69 @@
+.clients {
+  background: #f6f6f6 !important;
+  padding: 100px 0;
+  &__title {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 24px;
+  }
+  &__desc {
+    font-size: 14px;
+    line-height: 23px;
+    color: #bdbdbd;
+    font-weight: bold;
+  }
+  &__carousel {
+    margin-top: 24px;
+  }
+  &__stars {
+    i {
+      color: $primary;
+    }
+  }
+  &__feedback {
+    font-size: 14px;
+    line-height: 23px;
+    color: #bdbdbd;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 24px;
+  }
+  .user {
+    &__avatar img {
+      height: 70px;
+      width: 70px !important;
+      min-width: 70px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+    h4 {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}
+.owl-nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+  .owl-prev,
+  .owl-next {
+    width: 42px;
+    height: 42px;
+    background: #e4e4e4 !important;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    span {
+      font-size: 34px;
+      position: relative;
+      bottom: 3px;
+      color: #646464;
+    }
+  }
+}

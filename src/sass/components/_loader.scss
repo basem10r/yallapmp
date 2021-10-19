@@ -1,0 +1,63 @@
+#loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: $secondary;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+  .loader {
+    width: 100px;
+    height: 100px;
+    background-color: $primary;
+    outline: 6px solid $primary;
+    outline-offset: -1px;
+    transform: rotate(45deg) scale(0.4);
+    &:before {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 100px;
+      background-color: $primary;
+      animation: rotate 3s infinite;
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform-origin: bottom left;
+    transform: translate(-5px, -105px) rotate(0deg) scale(1.1);
+  }
+  25% {
+    transform-origin: bottom left;
+    transform: translate(-5px, -105px) rotate(-180deg) scale(1.1);
+  }
+  26% {
+    transform-origin: top left;
+    transform: translate(-5px, 105px) rotate(-180deg) scale(1.1);
+  }
+  50% {
+    transform-origin: top left;
+    transform: translate(-5px, 105px) rotate(-360deg) scale(1.1);
+  }
+  51% {
+    transform-origin: top right;
+    transform: translate(5px, 105px) rotate(-360deg) scale(1.1);
+  }
+  75% {
+    transform-origin: top right;
+    transform: translate(5px, 105px) rotate(-540deg) scale(1.1);
+  }
+  76% {
+    transform-origin: bottom right;
+    transform: translate(5px, -105px) rotate(-540deg) scale(1.1);
+  }
+  100% {
+    transform-origin: bottom right;
+    transform: translate(5px, -105px) rotate(-720deg) scale(1.1);
+  }
+}

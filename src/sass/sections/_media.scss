@@ -1,0 +1,49 @@
+.media {
+  @media #{$max-medium} {
+    padding: 50px 0 !important;
+  }
+  position: relative;
+  background: $secondary-100;
+  .shape4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .list {
+    max-width: 520px;
+    &__item {
+      padding: 28px;
+      background: $secondary-300;
+      &:nth-child(2) {
+        background: transparent;
+      }
+    }
+    &__icon {
+      height: 40px;
+      min-width: 40px;
+      line-height: 40px;
+      text-align: center;
+      border-radius: 50%;
+      background: $primary;
+      margin-right: 20px;
+
+      i {
+        color: $white;
+      }
+    }
+    &__text {
+      font-size: 20px;
+      color: $white;
+    }
+  }
+  .section__text {
+    max-width: 267px;
+    margin-right: 80px;
+  }
+  .section__desc {
+    font-size: 16px;
+  }
+  .section__title {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,119 @@
+.footer {
+  padding-top: 100px;
+  background: linear-gradient(180deg, #00609e, #2086c6);
+  border-radius: 80px 0 0 0;
+  @media #{$max-medium} {
+    padding: 50px 0 !important;
+  }
+  color: $white;
+  &__title {
+    font-weight: bold !important;
+    font-size: 16px;
+  }
+  .connect {
+    &__item {
+      font-size: 16px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+  }
+  .social {
+    .icon i {
+      font-size: 24px;
+    }
+  }
+  .info {
+    &__title {
+      font-size: 18px;
+      margin-top: 30px;
+      font-weight: bold;
+    }
+    &__desc {
+      margin-top: 20px;
+      font-size: 18px;
+      line-height: 1.5;
+      max-width: 361px;
+    }
+    &__links {
+      margin-top: 28px;
+
+      .footer__title {
+        font-size: 22px;
+      }
+    }
+  }
+  .post {
+    .main-card {
+      margin-top: 20px;
+      &__thumbnail {
+      }
+      &__img {
+        min-width: 162px;
+        height: auto;
+        object-fit: cover;
+      }
+      &__location {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      &__stat {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      &__text {
+        max-width: 100%;
+        width: 100%;
+      }
+      &__single-stat {
+        font-size: 14px;
+        color: $gray-500;
+      }
+    }
+  }
+  .news {
+    &__desc {
+      font-size: 17px;
+      line-height: 1.5;
+      margin-bottom: 28px;
+    }
+    &__subscribe {
+      .form-control {
+        background: $secondary-300;
+        color: $white;
+        &:focus-within {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+      .btn-primary {
+        height: 58px;
+        padding: 10px 20px;
+      }
+    }
+  }
+  .list {
+    &__item {
+      margin-bottom: 10px;
+      a {
+        text-decoration: none;
+        color: $white;
+        font-size: 14px;
+        @include transition();
+        &:hover,
+        &:focus {
+          color: $primary;
+        }
+      }
+    }
+  }
+  .copyright {
+    margin-top: 50px;
+    padding: 30px 0;
+    border-top: 1px solid #bebebe;
+    &__text {
+      font-size: 10px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.btn {
+  font-size: $btn-font-size;
+  padding: 17px 40px;
+  font-weight: bold;
+  border-radius: 0;
+  &.btn-sm {
+    padding: 13px 20px;
+    font-size: 16px;
+  }
+  &.btn-transparent {
+    background: transparent;
+  }
+  &.btn-primary {
+    background: $primary;
+    color: $secondary;
+    border: 2px solid $primary;
+    &:hover {
+      background: transparent;
+      color: $primary;
+    }
+  }
+  &.btn-shadow {
+    @include shadow(0, 10px, 30px, 0, rgba($primary, 0.3));
+  }
+  &.btn-primary-outline {
+    background: $white;
+    color: $primary;
+    border: 2px solid $primary;
+    @include shadow(0, 5px, 50px, 0, rgba(0, 0, 0, 0.05));
+    &:hover {
+      background: $primary;
+      color: $white;
+    }
+  }
+}

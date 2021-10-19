@@ -1,0 +1,223 @@
+.navbar-main {
+  padding: 30px 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 3333;
+  &__dark {
+    background: $secondary;
+  }
+  &__logo img {
+    max-width: 122px;
+    @media #{$max-medium} {
+      max-width: 80px;
+    }
+  }
+  &__contact-title {
+    color: $white;
+    i {
+      font-size: $font-size-body;
+    }
+  }
+}
+
+.navbar-nav {
+  .main {
+    margin-bottom: 20px;
+    position: relative;
+    .fa-angle-right {
+      padding: 10px;
+      cursor: pointer;
+    }
+    .main-link {
+      font-size: 18px;
+      text-transform: uppercase;
+      color: $white;
+      text-decoration: none;
+    }
+    .dropdown-menu li {
+      margin-bottom: 10px;
+      a {
+        font-size: 16px;
+        text-decoration: none;
+        color: $gray-500;
+      }
+      .dropdown-menu li {
+        a {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+.bread-crumb {
+  background: url(../images/breadcrumb.png) no-repeat;
+  background-size: cover;
+  height: 416px;
+  background-position: center bottom;
+  &__title {
+    color: $primary;
+    font-size: 65px;
+    font-weight: bold;
+    @media #{$max-medium} {
+      font-size: 34px;
+    }
+  }
+  &__desc {
+    color: $white;
+    font-size: 20px;
+    line-height: 39px;
+    margin-top: 22px;
+    @media #{$max-medium} {
+      font-size: 16px;
+    }
+  }
+}
+
+.blog-first,
+.blog-second,
+.blog-third {
+  padding: 100px 0;
+}
+
+.blog-card {
+  display: flex;
+  &__upper {
+    max-width: 296px;
+    width: 296px;
+    min-width: 296px;
+    display: flex;
+    flex-direction: column-reverse;
+    @media #{$max-medium} {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  &__lower {
+    margin-left: 42px;
+    @media #{$max-mobile } {
+      margin-left: 0;
+    }
+  }
+  &__img img {
+    height: 357px;
+    object-fit: cover;
+    @media #{$max-medium} {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .user {
+    display: flex;
+    align-items: center;
+    &__img img {
+      height: 57px;
+      width: 57px;
+      border-radius: 50%;
+      @media #{$max-medium} {
+        height: 30px;
+        width: 30px;
+      }
+    }
+    &__text {
+      margin-left: 17px;
+    }
+    &__name {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    &__date {
+      font-size: 15px;
+      color: #7b7b7b;
+    }
+  }
+  .icons {
+    display: flex;
+    flex-direction: column;
+    &__item {
+      height: 57px !important;
+      width: 57px !important;
+      border-radius: 50%;
+      background: #ececec;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 17px;
+      @media #{$max-medium} {
+        height: 40px !important;
+        width: 40px !important;
+      }
+      img {
+        width: 24px !important;
+      }
+    }
+  }
+  &__title {
+    font-size: 42px;
+    font-weight: bold;
+    color: #3d3d3d;
+    line-height: 58px;
+    max-width: 493px;
+    margin-bottom: 27px;
+    @media #{$max-medium} {
+      font-size: 34px;
+    }
+  }
+  &__subtitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3d3d3d;
+    margin-bottom: 17px;
+  }
+  &__desc {
+    font-size: 18px;
+    color: #bdbdbd;
+    line-height: 35px;
+  }
+  &--horizontal {
+    flex-direction: column;
+    .blog-card__upper {
+      flex-direction: column;
+      width: 100%;
+      max-width: 100%;
+    }
+    .blog-card__img img {
+      width: 100% !important;
+    }
+    .blog-card__head {
+      margin-top: 40px;
+      width: 100%;
+    }
+    .icons {
+      flex-direction: row;
+      &__item {
+        margin-left: 10px;
+      }
+    }
+    .blog-card__lower {
+      margin: 0;
+    }
+    .blog-card__title {
+      font-size: 34px;
+      line-height: 40px;
+    }
+    .blog-card .icons__item img {
+      width: 20px !important;
+    }
+  }
+  &--big {
+    .blog-card__head {
+      justify-content: start;
+      .icons {
+        margin-left: 20px;
+      }
+    }
+  }
+}

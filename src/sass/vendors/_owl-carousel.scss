@@ -1,0 +1,12 @@
+.owl-dots {
+  margin-top: 50px;
+  .owl-dot {
+    width: 60px;
+    height: 4px;
+    background: $gray-700 !important;
+    margin-right: 10px;
+    &.active {
+      background: $primary !important;
+    }
+  }
+}
