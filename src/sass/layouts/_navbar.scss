@@ -1,6 +1,10 @@
 .navbar {
     background: $secondary;
     height: 98px;
+
+    &.affix {
+        background: rgba($color: $secondary, $alpha: 0.8);
+    }
     @media #{$max-medium} {
         height: auto;
     }

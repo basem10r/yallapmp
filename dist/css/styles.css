@@ -4721,6 +4721,13 @@ a:hover {
 .hero {
   position: relative;
   height: calc(100vh - 98px);
+  top: 98px;
+}
+
+@media (max-width: 992px) {
+  .hero {
+    top: 71px;
+  }
 }
 
 .hero .owl-item,
@@ -6018,6 +6025,10 @@ a:hover {
 .navbar {
   background: #1c1c1c;
   height: 98px;
+}
+
+.navbar.affix {
+  background: rgba(28, 28, 28, 0.8);
 }
 
 @media (max-width: 992px) {

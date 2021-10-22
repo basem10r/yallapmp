@@ -1,7 +1,7 @@
 extends ../layouts/default-layout.pug
 block content
   - var pageName = 'index'
-  #fullpage
+    include ../partials/header.pug
     include ../sections/_hero.pug
     include ../sections/_aboutus.pug
     include ../sections/_courses.pug

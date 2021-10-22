@@ -1,6 +1,10 @@
 .hero {
   position: relative;
   height: calc(100vh - 98px);
+  top: 98px;
+  @media #{$max-medium} {
+    top: 71px;
+  }
   .owl-item,
   .owl-stage,
   .owl-stage-outer,

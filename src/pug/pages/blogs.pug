@@ -1,7 +1,6 @@
 extends ../layouts/default-layout.pug
 block content
-  - var pageName = 'index'
-  #fullpage
+  - var pageName = 'blogs'
+    include ../partials/header.pug
     include ../partials/_breadcrumb.pug
     include ../sections/_blogs.pug
-    include ../partials/footer.pug
