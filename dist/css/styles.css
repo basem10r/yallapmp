@@ -4727,6 +4727,13 @@ a:hover {
 @media (max-width: 992px) {
   .hero {
     top: 71px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 250px;
   }
 }
 
@@ -4768,11 +4775,26 @@ a:hover {
   margin-bottom: 40px;
 }
 
+@media (max-width: 768px) {
+  .hero__head {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+
 .hero__desc {
   font-size: 18px;
   line-height: 39px;
   margin-bottom: 40px;
   color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .hero__desc {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .hero .btn-primary {
@@ -4782,6 +4804,12 @@ a:hover {
   font-weight: bold;
   border-radius: 0 20px 0 20px;
   border: 2px dotted #ff9207;
+}
+
+@media (max-width: 768px) {
+  .hero .btn-primary {
+    padding: 10px;
+  }
 }
 
 .hero .owl-dots {
@@ -4795,6 +4823,12 @@ a:hover {
   justify-content: center;
   position: relative;
   z-index: 22;
+}
+
+@media (max-width: 768px) {
+  .hero .owl-dots {
+    margin-top: -10px;
+  }
 }
 
 .hero .owl-dots .owl-dot {
@@ -6081,13 +6115,14 @@ a:hover {
 
 @media (max-width: 768px) {
   .navbar-collapse.collapse li {
+    position: relative;
     padding: 10px;
   }
   .navbar-collapse.collapse li a {
     font-size: 16px !important;
   }
-  .navbar-collapse.collapse li a.active {
-    display: none;
+  .navbar-collapse.collapse li a.active::after {
+    bottom: -10px !important;
   }
 }
 

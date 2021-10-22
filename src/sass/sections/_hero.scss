@@ -4,6 +4,10 @@
   top: 98px;
   @media #{$max-medium} {
     top: 71px;
+    height: 400px;
+  }
+  @media #{$max-mobile} {
+    height: 250px;
   }
   .owl-item,
   .owl-stage,
@@ -32,12 +36,21 @@
     font-size: 54px;
     color: $primary;
     margin-bottom: 40px;
+    @media #{$max-mobile} {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
   }
   &__desc {
     font-size: 18px;
     line-height: 39px;
     margin-bottom: 40px;
     color: $white;
+    @media #{$max-mobile} {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
   }
   .btn-primary {
     background: $white;
@@ -46,6 +59,9 @@
     font-weight: bold;
     border-radius: 0 20px 0 20px;
     border: 2px dotted $primary;
+    @media #{$max-mobile} {
+      padding: 10px;
+    }
   }
   .owl-dots {
     margin-top: -50px;
@@ -54,11 +70,16 @@
     justify-content: center;
     position: relative;
     z-index: 22;
+    @media #{$max-mobile} {
+      margin-top: -10px;
+    }
     .owl-dot {
       height: 5px;
       width: 25px;
       border-radius: 6px;
       background: $white !important;
+      @media #{$max-mobile} {
+      }
     }
   }
 }

@@ -6,21 +6,32 @@ nav#navbar.navbar.navbar-expand-md.fixed-top.navbar-inverse(data-offset-top="197
       i.fa.fa-bars
     #collapsibleNavbar.collapse.navbar-collapse.justify-content-center
       ul.navbar-nav
-        li.nav-item
         if pageName === 'index'
-          a.nav-link(href='#home') Home
+          li.nav-item
+            a.nav-link(href='#home') Home
+          li.nav-item
+            a.nav-link(href='#aboutus') About Us
+          li.nav-item
+            a.nav-link(href='#courses') Courses
+          li.nav-item
+            a.nav-link(href='#fawazir') Fawazir
+          li.nav-item
+            a.nav-link(href='#feedback') Feedback
+          li.nav-item
+            a.nav-link(href='#contact') Contact
         else 
-          a.nav-link(href='./index.html#home') Home
-        li.nav-item
-          a.nav-link(href='#aboutus') About Us
-        li.nav-item
-          a.nav-link(href='#courses') Courses
-        li.nav-item
-          a.nav-link(href='#fawazir') Fawazir
-        li.nav-item
-          a.nav-link(href='#feedback') Feedback
-        li.nav-item
-          a.nav-link(href='#contact') Contact
+          li.nav-item
+            a.nav-link(href='./index.html#home') Home
+          li.nav-item
+            a.nav-link(href='./index.html#aboutus') About Us
+          li.nav-item
+            a.nav-link(href='./index.html#courses') Courses
+          li.nav-item
+            a.nav-link(href='./index.html#fawazir') Fawazir
+          li.nav-item
+            a.nav-link(href='./index.html#feedback') Feedback
+          li.nav-item
+            a.nav-link(href='./index.html#contact') Contact
         li.nav-item
           a.nav-link(href='blogs.html') Blog
     a(href="login.html").btn.btn-primary.mobile-hidden Log In / Register
