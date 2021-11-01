@@ -4,6 +4,8 @@ $(document).ready(function () {
     $("#loader").fadeOut(1000);
   });
 
+  $('body').scrollspy({ target: '#navbar', offset: 200 });
+  //  gallery 
 
   var owl = $("#owl-projects");
   owl.owlCarousel({
@@ -207,7 +209,7 @@ $(document).ready(function () {
     }
   });
 
-  //  gallery 
+
 
   $('.popup-gallery').magnificPopup({
     delegate: 'a',

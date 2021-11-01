@@ -28,3 +28,23 @@ a {
   background: linear-gradient(180deg, rgba($secondary, 0.5), rgba($secondary, 0.7));
   z-index: 1;
 }
+
+.whats-btn {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 22;
+  .btn-whats {
+    background: #47c756 !important;
+    color: #fff !important;
+    border: 1px solid #47c756 !important;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    i {
+      padding-right: 10px;
+      font-size: 24px;
+    }
+  }
+}

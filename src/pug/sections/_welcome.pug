@@ -1,7 +1,5 @@
 .section.welcome 
     .container 
-        .welcome-img.d-flex.justify-content-center 
-            img(src="images/welcome.png").img-fluid
         .welcome-text
             .row 
                 .col-12.col-md-6
@@ -12,12 +10,15 @@
                         .btn.btn-primary 
                             span Login with Google 
                             i.fa.fa-google.ml-3
-                .col-12.col-md-6.d-flex.justify-content-start.justify-content-md-end 
                     .welcome-text__connect.mt-5
                         .welcome-text__title Connect With Us
-                        .connect
-                            .connect__title Whatsapp
-                            .connect__desc +20 1128 8619 77 
-                        .connect
-                            .connect__title Whatsapp
-                            .connect__desc +20 1128 8619 77 
+                        .d-flex.flex-column.flex-md-row.align-items-start.align-items-md-center
+                            .connect
+                                .connect__title Whatsapp
+                                .connect__desc +20 1128 8619 77 
+                            .connect.ml-0.ml-md-3
+                                .connect__title Email
+                                .connect__desc Support@Yallapmp.Com
+                .col-12.col-md-6
+                    .welcome-img.d-flex.justify-content-center 
+                        img(src="images/welcome.png").img-fluid

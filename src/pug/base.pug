@@ -9,11 +9,15 @@ html(lang="en")
     link(href="css/bootstrap.css" , rel="stylesheet")
     link(href="css/styles.css", rel="stylesheet")
  
-  body(data-spy="scroll" data-target="#navbar" data-offset="50")
+  body(data-spy="scroll" data-target="#navbar" data-offset="200")
     block layout
 
     #loader 
       .loader
+    .whats-btn
+      a(href='https://api.whatsapp.com/send?phone=15551234567').btn.btn-primary.btn-whats 
+        i.fa.fa-whatsapp
+        span Whatsapp
     script(src="js/core.min.js")
     script(src="js/scripts.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js")

@@ -9,7 +9,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
   </head>
-  <body data-spy="scroll" data-target="#navbar" data-offset="50">
+  <body data-spy="scroll" data-target="#navbar" data-offset="200">
     <nav class="navbar navbar-expand-md fixed-top navbar-inverse" id="navbar" data-offset-top="197" data-spy="affix">
       <div class="container"><a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><i class="fa fa-bars"></i></button>
@@ -28,7 +28,6 @@
     </nav>
     <div class="section welcome"> 
       <div class="container"> 
-        <div class="welcome-img d-flex justify-content-center"> <img class="img-fluid" src="images/welcome.png"></div>
         <div class="welcome-text">
           <div class="row"> 
             <div class="col-12 col-md-6">
@@ -38,19 +37,22 @@
               <div class="welcome-text__button"> 
                 <div class="btn btn-primary"> <span>Login with Google </span><i class="fa fa-google ml-3"></i></div>
               </div>
-            </div>
-            <div class="col-12 col-md-6 d-flex justify-content-start justify-content-md-end"> 
               <div class="welcome-text__connect mt-5">
                 <div class="welcome-text__title">Connect With Us</div>
-                <div class="connect">
-                  <div class="connect__title">Whatsapp</div>
-                  <div class="connect__desc">+20 1128 8619 77 </div>
-                </div>
-                <div class="connect">
-                  <div class="connect__title">Whatsapp</div>
-                  <div class="connect__desc">+20 1128 8619 77 </div>
+                <div class="d-flex flex-column flex-md-row align-items-start align-items-md-center">
+                  <div class="connect">
+                    <div class="connect__title">Whatsapp</div>
+                    <div class="connect__desc">+20 1128 8619 77 </div>
+                  </div>
+                  <div class="connect ml-0 ml-md-3">
+                    <div class="connect__title">Email</div>
+                    <div class="connect__desc">Support@Yallapmp.Com</div>
+                  </div>
                 </div>
               </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="welcome-img d-flex justify-content-center"> <img class="img-fluid" src="images/welcome.png"></div>
             </div>
           </div>
         </div>
@@ -99,6 +101,7 @@
     <div id="loader"> 
       <div class="loader"></div>
     </div>
+    <div class="whats-btn"><a class="btn btn-primary btn-whats" href="https://api.whatsapp.com/send?phone=15551234567"> <i class="fa fa-whatsapp"></i><span>Whatsapp</span></a></div>
     <script src="js/core.min.js"></script>
     <script src="js/scripts.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
