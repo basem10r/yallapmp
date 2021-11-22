@@ -52,8 +52,7 @@
 }
 
 .bread-crumb {
-  background: url(../images/breadcrumb.png) no-repeat;
-  background-size: cover;
+  background-size: cover !important;
   height: 416px;
   background-position: center bottom;
   &__title {
@@ -78,11 +77,17 @@
 .blog-first,
 .blog-second,
 .blog-third {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .blog-card {
   display: flex;
+
+  &:hover {
+    .blog-card__img img {
+      transform: scale(1.3) rotateZ(10deg);
+    }
+  }
   &__upper {
     max-width: 296px;
     width: 296px;
@@ -100,9 +105,13 @@
       margin-left: 0;
     }
   }
+  &__img {
+    overflow: hidden;
+  }
   &__img img {
     height: 357px;
     object-fit: cover;
+    @include transition();
     @media #{$max-medium} {
       max-width: 100%;
       width: 100%;
@@ -160,7 +169,7 @@
     }
   }
   &__title {
-    font-size: 42px;
+    font-size: 36px;
     font-weight: bold;
     color: #3d3d3d;
     line-height: 58px;

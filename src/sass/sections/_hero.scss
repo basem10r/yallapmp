@@ -1,7 +1,6 @@
 .hero {
   position: relative;
-  height: calc(100vh - 98px);
-  top: 98px;
+  height: 100vh;
   @media #{$max-medium} {
     top: 71px;
     height: 400px;
@@ -59,8 +58,12 @@
     font-weight: bold;
     border-radius: 0 20px 0 20px;
     border: 2px dotted $primary;
+    @include transition();
     @media #{$max-mobile} {
       padding: 10px;
+    }
+    &:hover {
+      border-radius: 20px 0px 20px 0px;
     }
   }
   .owl-dots {

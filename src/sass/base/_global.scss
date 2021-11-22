@@ -7,6 +7,7 @@ body {
   font-family: $font-family;
   background: $white;
   line-height: 1;
+  overflow-x: hidden;
 }
 a {
   color: inherit;
@@ -28,23 +29,122 @@ a {
   background: linear-gradient(180deg, rgba($secondary, 0.5), rgba($secondary, 0.7));
   z-index: 1;
 }
-
 .whats-btn {
   position: fixed;
   bottom: 50px;
   right: 50px;
   z-index: 22;
+}
+.btn-whats {
+  background: #47c756 !important;
+  color: #fff !important;
+  border: 1px solid #47c756 !important;
+  border-radius: 35px !important;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px !important;
+  i {
+    padding-right: 10px;
+    font-size: 24px;
+  }
+  @media #{$max-medium} {
+    height: 50px !important;
+    justify-content: center;
+    width: 50px !important;
+    min-width: 50px !important;
+    padding: 0 !important;
+  }
+}
+.btn-whats {
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #47c756;
+  cursor: hand;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
+}
+
+.btn-whats:hover {
+  border: 1px solid #47c756;
+  color: #47c756 !important;
+}
+.btn-whats::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  display: block;
+  background: #fff;
+  position: absolute;
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  left: -10%;
+  opacity: 1;
+  top: 0;
+  z-index: -12;
+  -moz-transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+  box-shadow: 2px 0px 14px rgba(0, 0, 0, 0.6);
+}
+
+.btn-whats::after {
+  content: "";
+  width: 0%;
+  height: 100%;
+  display: block;
+  background: #47c756;
+  position: absolute;
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  left: -10%;
+  opacity: 0;
+  top: 0;
+  z-index: -15;
+  -webkit-transition: all 0.94s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+  -moz-transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+  -o-transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+  transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+  box-shadow: 2px 0px 14px rgba(0, 0, 0, 0.6);
+}
+.btn-whats:hover::before,
+.btn-whats:hover::before {
+  opacity: 1;
+  width: 116%;
+}
+.btn-whats:hover::after,
+.btn-whats:hover::after {
+  opacity: 1;
+  width: 120%;
+}
+@media #{$max-medium} {
+  bottom: 20px;
+  right: 20px;
   .btn-whats {
-    background: #47c756 !important;
-    color: #fff !important;
-    border: 1px solid #47c756 !important;
-    border-radius: 35px;
+    height: 60px;
+    width: 60px;
+    min-width: 60px;
+    padding: 0;
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 10px 30px;
     i {
-      padding-right: 10px;
-      font-size: 24px;
+      padding-right: 0;
+    }
+    span {
+      display: none;
     }
   }
 }

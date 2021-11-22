@@ -1,6 +1,6 @@
 .clients {
   background: #f6f6f6 !important;
-  padding: 150px 0;
+  padding: 100px 0;
   &__title {
     font-size: 35px;
     font-weight: bold;
@@ -65,5 +65,29 @@
       bottom: 3px;
       color: #646464;
     }
+  }
+}
+
+img.avatars {
+  position: absolute;
+  max-width: 400px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  animation: scale-animation 3s infinite normal ease-in-out;
+  @media #{$max-medium} {
+    max-width: 300px;
+  }
+}
+
+@keyframes scale-animation {
+  0% {
+    @include scale(1);
+  }
+  50% {
+    @include scale(1.15);
+  }
+  100% {
+    @include scale(1);
   }
 }

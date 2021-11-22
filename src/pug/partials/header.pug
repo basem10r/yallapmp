@@ -1,4 +1,4 @@
-nav#navbar.navbar.navbar-expand-md.fixed-top.navbar-inverse(data-offset-top="197" data-spy="affix")
+nav#navbar.navbar.navbar-expand-md.fixed-top.navbar-inverse(data-offset-top="-1" data-spy="affix" class= pageName === 'login' ? 'login-nav' :'' )
   .container
     a.navbar-brand(href='index.html')
       img(src='images/logo.png')
@@ -8,30 +8,30 @@ nav#navbar.navbar.navbar-expand-md.fixed-top.navbar-inverse(data-offset-top="197
       ul.navbar-nav
         if pageName === 'index'
           li.nav-item
-            a.nav-link(href='#home') Home
+            a.active.nav-link(href='#home') Home
           li.nav-item
             a.nav-link(href='#aboutus') About Us
           li.nav-item
-            a.nav-link(href='#courses') Courses
-          li.nav-item
             a.nav-link(href='#fawazir') Fawazir
+          li.nav-item
+            a.nav-link(href='#courses') Courses
           li.nav-item
             a.nav-link(href='#feedback') Feedback
           li.nav-item
-            a.nav-link(href='#contact') Contact
+            a.nav-link(href='#footer') Contact
         else 
           li.nav-item
             a.nav-link(href='./index.html#home') Home
           li.nav-item
             a.nav-link(href='./index.html#aboutus') About Us
           li.nav-item
-            a.nav-link(href='./index.html#courses') Courses
-          li.nav-item
             a.nav-link(href='./index.html#fawazir') Fawazir
+          li.nav-item
+            a.nav-link(href='./index.html#courses') Courses
           li.nav-item
             a.nav-link(href='./index.html#feedback') Feedback
           li.nav-item
-            a.nav-link(href='./index.html#contact') Contact
+            a.nav-link(href='#footer') Contact
         li.nav-item
           a.nav-link(href='blogs.html') Blog
     a(href="login.html").btn.btn-primary.mobile-hidden Log In / Register

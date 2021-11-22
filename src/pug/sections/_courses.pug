@@ -2,24 +2,24 @@ section.section.courses#courses
     .container 
         .row 
             .col-12.col-md-6 
-                .video-card 
+                .video-card.wow.fadeInLeft
                     img(src="images/courses.png").video-card__image 
                     a(href="http://www.youtube.com/watch?v=0O2aH4XLbto").popup-youtube.video-card__icon 
                         i.fa.fa-play
             .col-12.col-md-6
-                .courses__text 
+                .courses__text.wow.fadeInRight
                     h2.courses__title YALLA PMP
                     p.courses__desc "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut eni"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation exercitationveniam, quis nostrud exercitation minim veniam, quis nostrud 
         .row.mt-5.d-flex.justify-content-between 
             .col-12.col-md-6.col-lg-4.child 
-                .stat__card
-                    span.stat__number 13,822
+                .stat__card.wow.fadeInLeft(data-wow-delay="0.3s")
+                    span.stat__number.timer(data-from="0" data-to="13822" data-speed="5000")  
                     h3.stat__title Certified Trainees
             .col-12.col-md-6.col-lg-4.child
-                .stat__card
-                    span.stat__number 13,822
+                .stat__card.mx-auto.wow.fadeInLeft(data-wow-delay="0.6s")
+                    span.stat__number.timer(data-from="0" data-to="13822" data-speed="5000") 
                     h3.stat__title Students
             .col-12.col-md-6.col-lg-4.child
-                .stat__card
-                    span.stat__number 13,822
+                .stat__card.ml-auto.wow.fadeInLeft(data-wow-delay="0.9s")
+                    span.stat__number.timer(data-from="0" data-to="13822" data-speed="5000") 
                     h3.stat__title Certified Courses

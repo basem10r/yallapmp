@@ -4,7 +4,17 @@ $(document).ready(function () {
     $("#loader").fadeOut(1000);
   });
 
-  $('body').scrollspy({ target: '#navbar', offset: 200 });
+
+
+  var divId;
+
+  $('#navbar a').click(function () {
+    divId = $(this).attr('href');
+    $('html, body').animate({
+      scrollTop: $(divId).offset().top - 54
+    }, 800);
+  });
+
   //  gallery 
 
   var owl = $("#owl-projects");
@@ -178,7 +188,7 @@ $(document).ready(function () {
         margin: 20,
       },
       992: {
-        items: 1,
+        items: 2,
         margin: 35,
 
       },
@@ -236,19 +246,19 @@ $(document).ready(function () {
     {
       boxClass: 'wow',      // animated element css class (default is wow)
       animateClass: 'animated', // animation css class (default is animated)
-      offset: 100,          // distance to the element when triggering the animation (default is 0)
-      mobile: false,       // trigger animations on mobile devices (default is true)
+      offset: 50,          // distance to the element when triggering the animation (default is 0)
+      mobile: true,       // trigger animations on mobile devices (default is true)
       live: true,       // act on asynchronously loaded content (default is true)
-      scrollContainer: null, // optional scroll container selector, otherwise use window
+      scrollContainer: null,// optional scroll container selector, otherwise use window
     }
   );
   wow.init();
 
   $(window).scroll(function () {
-    if ($('.counter').visible(true)) {
-      $('.counter').countTo('start');
+    if ($('.timer').visible(true)) {
+      $('.timer').countTo('start');
     } else {
-      $('.counter').countTo('stop');
+      $('.timer').countTo('stop');
     }
   });
 

@@ -1,0 +1,10 @@
+extends ../layouts/default-layout.pug
+block content
+  - var pageName = 'courses'
+  include ../partials/header.pug
+  - var bg = 'images/courses-banner.png'
+  - var pageName = 'Suggested courses'
+  include ../partials/_breadcrumb.pug
+  include ../sections/_filters.pug
+  include ../sections/_courses-content.pug
+  include ../partials/_pagination.pug
